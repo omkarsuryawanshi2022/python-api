@@ -96,3 +96,7 @@ def custom_openapi():
 
 app.openapi = custom_openapi
 
+# ✅ Root endpoint - Render 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from FastAPI!"}
